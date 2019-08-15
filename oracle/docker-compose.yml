@@ -1,0 +1,13 @@
+version: '2'
+services:
+  oracle11g:
+    image: registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g
+    environment:
+      DBCA_TOTAL_MEMORY: 16192
+      LC_ALL: zh_CN.utf8
+      LANG: zh_CN.utf8
+    ports:
+      - "1521:1521"
+    restart:
+      always
+    container_name: oracle
